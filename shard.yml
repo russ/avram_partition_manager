@@ -1,0 +1,19 @@
+name: avram_partition_manager
+version: 0.1.0
+
+authors:
+  - Russell Smith <russ@bashme.org>
+
+description: |
+  Avram support for managing partitioned tables.
+
+# dependencies:
+#   pg:
+#     github: will/crystal-pg
+#     version: "~> 0.5"
+
+# development_dependencies:
+#   webmock:
+#     github: manastech/webmock.cr
+
+license: MIT

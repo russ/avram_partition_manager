@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: e2e_test_test
+    volumes:
+      - postgres:/var/lib/postgresql
+    networks:
+      - internal
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      LUCKY_ENV: test
+      SHARDS_CACHE_PATH: /app/.shards
+      DB_HOST: postgres
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    volumes:
+      - .:/app
+    command: /app/docker/entrypoint.sh
+    depends_on:
+      - postgres
+    networks:
+      - internal
+
+volumes:
+  postgres:
+
+networks:
+  internal:
