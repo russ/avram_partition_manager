@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This requires the `main` branch on https://github.com/luckyframework/avram for now.
+
 # Avram Partition Manager
 
 A Crystal shard for managing PostgreSQL table partitions in [Avram](https://github.com/luckyframework/avram) applications.
