@@ -12,7 +12,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   avram_partition_manager:
-    github: your-username/avram_partition_manager
+    github: russ/avram_partition_manager
 ```
 
 ## Usage
@@ -96,7 +96,7 @@ Avram::PartitionManager.process([partition])
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-username/avram_partition_manager/fork>)
+1. Fork it (<https://github.com/russ/avram_partition_manager/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
